@@ -3,7 +3,7 @@
 通过该应用，您可以简单快速的创建一个阿里云FC案例。
 
 - 下载命令行工具：`npm install -g @serverless-devs/s`
-- 初始化一个模版项目：`s init devscomp/start-fc`
+- 初始化一个模版项目：`s init devsapp/start-fc`
 - 进入项目后部署项目：`s deploy`
 
 -----
