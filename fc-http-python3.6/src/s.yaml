@@ -14,7 +14,7 @@ services:
       function:
         name: http-trigger-function
         description: this is a test
-        runtime: python3.6
+        runtime: python3
         codeUri: ./
         # ossBucket:
         # ossKey:  # conflict with codeUri
