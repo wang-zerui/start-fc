@@ -1,0 +1,167 @@
+name: publish package to serverless-hub
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install setuptools wheel twine
+          pip install requests
+      - name: event-java8
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-java8
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-node.js6
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-node.js6
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-node.js8
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-node.js8
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-node.js10
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-node.js10
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-node.js12
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-node.js12
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-php7.2
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-php7.2
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-python2.7
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-python2.7
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: event-python3.6
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-event-python3.6
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-java8
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-java8
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-node.js6
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-node.js6
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-node.js8
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-node.js8
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-node.js10
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-node.js10
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-node.js12
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-node.js12
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-php7.2
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-php7.2
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-python2.7
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-python2.7
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: http-python3.6
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-http-python3.6
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
