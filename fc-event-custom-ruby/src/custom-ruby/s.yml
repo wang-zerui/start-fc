@@ -1,0 +1,22 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-custom-ruby-custom-ruby:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: custom-ruby
+        description: helloworld
+        internetAccess: null
+      function:
+        name: custom-ruby
+        handler: index.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./
+        environmentVariables:
+          PATH: /usr/local/ruby/bin

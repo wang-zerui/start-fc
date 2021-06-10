@@ -1,0 +1,37 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-custom-fsharp-custom-fsharp:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: custom-fsharp
+        description: helloworld
+        internetAccess: null
+      function:
+        name: custom-fsharp
+        handler: Program.main
+        memorySize: 1024
+        runtime: custom
+        codeUri: ./FSharpDemo/bin/Release/netcoreapp3.1/linux-x64/publish
+      triggers:
+        - name: http_t
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      customDomains:
+        - domainName: Auto
+          protocol: HTTP
+          routeConfigs:
+            - serviceName: custom-fsharp
+              functionName: custom-fsharp
+              path: /*

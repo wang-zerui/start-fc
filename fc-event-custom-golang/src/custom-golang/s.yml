@@ -1,0 +1,20 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-custom-golang-custom-golang:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: custom-golang
+        description: helloworld
+        internetAccess: null
+      function:
+        name: custom-golang
+        handler: main.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./code

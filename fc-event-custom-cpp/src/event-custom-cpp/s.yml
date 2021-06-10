@@ -1,0 +1,20 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-event-custom-cpp-event-custom-cpp_event:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: event-custom-cpp
+        description: helloworld
+        internetAccess: null
+      function:
+        name: event-custom-cpp_event
+        handler: event.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./bin

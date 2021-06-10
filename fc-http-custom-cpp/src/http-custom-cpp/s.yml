@@ -1,0 +1,37 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-http-custom-cpp-http-custom-cpp_http:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: httpCpp
+        description: helloworld
+        internetAccess: null
+      function:
+        name: testFunc
+        handler: http.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./bin
+      triggers:
+        - name: http_t
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      customDomains:
+        - domainName: Auto
+          protocol: HTTP
+          routeConfigs:
+            - serviceName: httpCpp
+              functionName: testFunc
+              path: /*

@@ -1,0 +1,21 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  custom-dart-custom-dart:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: custom-dart
+        internetAccess: true
+      function:
+        name: custom-dart
+        handler: index.handler
+        timeout: 60
+        memorySize: 1024
+        runtime: custom
+        codeUri: ./code
+        environmentVariables: {}

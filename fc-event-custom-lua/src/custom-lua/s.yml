@@ -1,0 +1,20 @@
+edition: 1.0.0
+name: tramsform_fun
+access: default
+vars:
+  region: cn-shanghai
+services:
+  Service-custom-lua-custom-lua:
+    component: devsapp/fc
+    props:
+      region: ${vars.region}
+      service:
+        name: custom-lua
+        description: helloworld
+        internetAccess: null
+      function:
+        name: custom-lua
+        handler: index.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./

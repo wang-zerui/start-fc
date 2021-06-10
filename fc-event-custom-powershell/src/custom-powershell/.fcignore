@@ -1,0 +1,7 @@
+.env
+template.yml
+.funignore
+Funfile
+.nas.yml
+.s/package
+.s/tmp
