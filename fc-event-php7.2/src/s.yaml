@@ -15,7 +15,7 @@ services:
         name: event-function
         description: this is a test
         runtime: php7.2
-        codeUri: ./
+        codeUri: ./code
         # ossBucket:
         # ossKey:  # conflict with codeUri
         handler: index.handler
