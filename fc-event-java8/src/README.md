@@ -3,7 +3,7 @@
 ### Build
 
 ```bash
-$  s build docker
+$  s build --use-docker
 ```
 
 ## Deploy
