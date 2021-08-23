@@ -165,3 +165,57 @@ jobs:
           ls
           python hub-publish.py
           cd ..
+      - name: custom-container-event-python3.9
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-event-python3.9
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: custom-container-event-nodejs14
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-event-nodejs14
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: custom-container-event-cpp
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-event-cpp
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: custom-container-http-cpp
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-http-cpp
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: custom-container-http-springboot
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-http-springboot
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
+      - name: custom-container-http-aspdotnetcore
+        env:
+          publish_token: ${{ secrets.alibaba_registry_publish_token }}
+        run: |
+          cd fc-custom-container-http-aspdotnetcore
+          wget https://serverless-registry.oss-cn-hangzhou.aliyuncs.com/publish-file/python3/hub-publish.py
+          ls
+          python hub-publish.py
+          cd ..
