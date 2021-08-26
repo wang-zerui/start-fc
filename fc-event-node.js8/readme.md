@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init start-fc-event-nodejs8`
 - 进入项目：`cd start-fc-event-nodejs6`
-- 构建项目：`s build docker`
 - 部署项目：`s deploy`
 - 触发项目：`s invoke remote`
 
