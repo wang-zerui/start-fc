@@ -10,10 +10,6 @@ services:
       region: ${vars.region}
       service:
         name: container-demo
-        role:
-          name: container-demo-DefaultRole
-          policies:
-            - AliyunContainerRegistryReadOnlyAccess
         internetAccess: true
       function:
         name: springboot-http-function
@@ -27,7 +23,6 @@ services:
         runtime: custom-container
         customContainerConfig:
           image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-springboot-http:v0.1
-        cAPort: 9000
         codeUri: ./code
 
       triggers:

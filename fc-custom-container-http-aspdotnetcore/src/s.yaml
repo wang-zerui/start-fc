@@ -10,10 +10,6 @@ services:
       region: ${vars.region}
       service:
         name: container-demo
-        role:
-          name: container-demo-DefaultRole
-          policies:
-            - AliyunContainerRegistryReadOnlyAccess
         internetAccess: true
       function:
         name: aspdotnetcore-http-function
