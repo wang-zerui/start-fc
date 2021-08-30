@@ -5,15 +5,11 @@ vars:
   region: cn-shenzhen
 services:
   customContainer-demo:
-    component: devsapp/fc@dev
+    component: devsapp/fc
     props:
       region: ${vars.region}
       service:
         name: container-demo
-        role:
-          name: container-demo-DefaultRole
-          policies:
-            - AliyunContainerRegistryReadOnlyAccess
         internetAccess: true
       function:
         name: cpp-event-function
@@ -27,6 +23,5 @@ services:
         runtime: custom-container
         customContainerConfig:
           image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-cpp-event:v0.1
-        cAPort: 9000
         codeUri: ./code
 # 函数计算FC组件文档参考地址：https://github.com/devsapp/fc
