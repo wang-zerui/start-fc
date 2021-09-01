@@ -42,4 +42,4 @@ services:
               methods:
                 - GET
                 - POST
-# 函数计算FC组件文档参考地址：https://github.com/devsapp/fc
+# https://github.com/devsapp/fc

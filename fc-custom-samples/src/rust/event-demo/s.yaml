@@ -19,3 +19,4 @@ services:
         memorySize: 512
         runtime: custom
         codeUri: ./pkg
+# https://github.com/devsapp/fc

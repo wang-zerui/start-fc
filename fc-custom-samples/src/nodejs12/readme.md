@@ -1,18 +1,8 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
+This is an example of using nodejs12 to write an event function. You can use this example for secondary development, just modify the code/server.js file.
 
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
-
-这里展示了 nodejs12 编写事件函数示例, 您可以基于这个示例进行二次开发，只需要修改 code/server.js 文件中的逻辑即可。
-
-nodejs14 同理， 就是先将 node 二进制下载下来， 打包到代码包中
+Similarly for nodejs14, first download the node binary and package it into the code.zip.
 
 ### 1. 下载二进制的 nodejs
 

@@ -22,3 +22,4 @@ services:
         runtime: custom
         codeUri: ./code
         instanceConcurrency: 4
+# https://github.com/devsapp/fc

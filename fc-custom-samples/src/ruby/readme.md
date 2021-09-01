@@ -1,16 +1,6 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
-
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
-
-这里展示了 ruby 编写事件函数示例, 您可以基于这个示例进行二次开发，只需要修改 code/server.rb 文件中的逻辑即可。
+This is an example of using ruby to write an event function. You can use this example for secondary development, just modify the code/server.rb file.
 
 #### Deploy Function
 

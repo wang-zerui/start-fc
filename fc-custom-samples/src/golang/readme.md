@@ -1,18 +1,8 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
+This is an example of using golang to write an event function. You can use this example for secondary development, just modify the code/main.go file.
 
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
-
-这里展示了 golang 编写事件函数示例, 您可以基于这个示例进行二次开发，只需要修改 code/main.go 文件中的逻辑即可。
-
-> 如果您想增加依赖新的 go lib, 修改 build-image 中的 Dockerfile, 增加新的 go get 即可， 或者您修改 Dockerfile， 使用 gomod 管理依赖。
+> If you want to add a dependency on a new go library, modify the Dockerfile in the build-image and add a new go get, or you can modify the Dockerfile and use gomod to manage the dependencies.
 
 #### Deploy Function
 

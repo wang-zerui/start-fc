@@ -24,4 +24,4 @@ services:
         customContainerConfig:
           image: registry-vpc.cn-shenzhen.aliyuncs.com/fc-demo/fc-expresss:v0.1
         codeUri: ./code
-# 函数计算FC组件文档参考地址：https://github.com/devsapp/fc
+# https://github.com/devsapp/fc
