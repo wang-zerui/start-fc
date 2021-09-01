@@ -18,3 +18,4 @@ services:
         memorySize: 512
         runtime: custom
         codeUri: ./code
+# https://github.com/devsapp/fc

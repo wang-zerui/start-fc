@@ -1,18 +1,8 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
+This is an example of using python3.7 to write event and http functions. You can use this example for secondary development, just modify the code/server.py file, This example supports single instance multiple concurrency.
 
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
-
-这里展示了 python3.7 编写事件函数和 http 函数示例, 您可以基于这个示例进行二次开发，只需要修改 code 目录下面的 server.py 文件中的函数逻辑即可。
-
-### 事件函数
+### Event Function
 
 #### Deploy Function
 
@@ -63,7 +53,9 @@ FC Invoke Result:
 End of method: invoke
 ```
 
-### HTTP 函数
+### HTTP Function
+
+#### Deploy Function
 
 ```bash
 sam@iZj6c895xh98:~ cd python37/http-demo
@@ -108,6 +100,11 @@ fc-python37-demo:
   triggers:
     - type: http
       name: http_t
+```
+
+#### Invoke Function
+
+```
 sam@iZj6c895xh98:~/python37/http-demo  curl  http://pyHttpFunc.custom-demo.123456789.cn-hangzhou.fc.devsapp.net
 Hello World!
 ```

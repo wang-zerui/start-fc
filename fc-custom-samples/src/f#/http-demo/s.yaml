@@ -35,3 +35,4 @@ services:
             - serviceName: custom-demo
               functionName: fsharpHttpFunc
               path: /*
+# https://github.com/devsapp/fc

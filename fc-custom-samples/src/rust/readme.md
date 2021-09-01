@@ -1,14 +1,6 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
-
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
+This is an example of using rust to write an event function.
 
 #### Deploy Function
 

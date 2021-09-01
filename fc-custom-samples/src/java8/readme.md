@@ -1,16 +1,6 @@
-## 简介
+## Introduction
 
-### 安装和配置最新版本的 Serverless-Devs
-
-#### 安装
-
-[安装教程](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Install-tutorial.md)
-
-#### 配置
-
-[Setting-up-credentials](https://github.com/devsapp/fc/blob/main/docs/Getting-started/Setting-up-credentials.md)
-
-这里展示了 java 编写 springboot HTTP 函数示例, 您可以基于这个示例进行二次开发, 修改或者增加源码中对应的 controller 即可（不需要改变 springboot 开发习惯）。
+This is an example of using java to write an springboot HTTP function. You can use this example for secondary development, Just modify the corresponding controller in SpringbootDemo.
 
 #### Deploy Function
 
