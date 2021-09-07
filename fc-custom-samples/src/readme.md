@@ -17,11 +17,11 @@
 - PHP74-Swoole
   - [event-demo](php74)
 - Python37
-  - [event-demo](python37#事件函数)
-  - [http-demo](python37#http-函数)
+  - [event-demo](python37#event-function)
+  - [http-demo](python37#http-function)
 - C++
-  - [event-demo](cpp#事件函数)
-  - [http-demo](cpp#http-函数)
+  - [event-demo](cpp#event-function)
+  - [http-demo](cpp#http-function)
 - Java8-SpringBoot
   - [http-demo](java8)
 - Ruby
