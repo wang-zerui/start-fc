@@ -12,7 +12,7 @@ services:
         description: 'demo for fc-deploy component'
         internetAccess: true
       function:
-        name: event-function
+        name: event-php72
         description: this is a test
         runtime: php7.2
         codeUri: ./code

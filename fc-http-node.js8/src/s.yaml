@@ -12,7 +12,7 @@ services:
         description: 'demo for fc-deploy component'
         internetAccess: true
       function:
-        name: http-trigger-function
+        name: http-trigger-nodejs8
         description: this is a test
         runtime: nodejs8
         codeUri: ./code
