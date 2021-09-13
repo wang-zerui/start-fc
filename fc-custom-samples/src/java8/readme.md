@@ -1,12 +1,12 @@
 ## Introduction
 
-This is an example of using java to write an springboot HTTP function. You can use this example for secondary development, Just modify the corresponding controller in SpringbootDemo.
+This is an example of using java8 to write an springboot HTTP function. You can use this example for secondary development, Just modify the corresponding controller in SpringbootDemo.
 
 #### Deploy Function
 
 ```bash
 sam@iZj6c895xh98:~ cd java8/http-demo/code
-sam@iZj6c895xh98:~/java8/http-demo/code ./mvnw package
+sam@iZj6c895xh98:~/java8/http-demo/code mvn package
 ...
 [INFO] --- spring-boot-maven-plugin:2.1.8.RELEASE:repackage (repackage) @ demo ---
 [INFO] Replacing main artifact with repackaged archive
