@@ -74,8 +74,8 @@ End of method: invoke
 
 Modify the two function in code/sample/src/handlers/echo_handler.cpp：
 
-- EchoHttpHandler::OnInvoke
-- EchoHttpHandler::OnInitialize
+- EventHandler::OnInvoke
+- EventHandler::OnInitialize
 
 ### HTTP Function
 
@@ -152,5 +152,5 @@ Hello World!
 
 Modify the two function in code/sample/src/handlers/echo_handler.cpp：
 
-- EchoHttpHandler::OnInvoke
-- EchoHttpHandler::OnInitialize
+- HttpHandler::OnInvoke
+- HttpHandler::OnInitialize
